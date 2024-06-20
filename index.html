@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha do Desenvolvedor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Trilha do Desenvolvedor</h1>
+        <form id="devForm">
+            <div class="form-step active">
+                <h2>Qual é seu nível de experiência em programação?</h2>
+                <button type="button" class="option-btn" onclick="nextStep()">Iniciante</button>
+                <button type="button" class="option-btn" onclick="nextStep()">Intermediário</button>
+                <button type="button" class="option-btn" onclick="nextStep()">Avançado</button>
+            </div>
+            <div class="form-step">
+                <h2>Qual área de desenvolvimento você mais se interessa?</h2>
+                <button type="button" class="option-btn" onclick="nextStep()">Desenvolvimento Front-end</button>
+                <button type="button" class="option-btn" onclick="nextStep()">Desenvolvimento Back-end</button>
+                <button type="button" class="option-btn" onclick="nextStep()">Desenvolvimento Mobile</button>
+                <button type="button" class="option-btn" onclick="nextStep()">Data Science</button>
+                <button type="button" class="option-btn" onclick="nextStep()">DevOps</button>
+            </div>
+            <div class="form-step">
+                <h2>Qual linguagem de programação você prefere?</h2>
+                <button type="button" class="option-btn" onclick="nextStep()">JavaScript</button>
+                <button type="button" class="option-btn" onclick="nextStep()">Python</button>
+                <button type="button" class="option-btn" onclick="nextStep()">Java</button>
+                <button type="button" class="option-btn" onclick="nextStep()">C#</button>
+            </div>
+            <div class="form-step">
+                <h2>Qual tipo de empresa você gostaria de trabalhar?</h2>
+                <button type="button" class="option-btn" onclick="submitForm()">Startup</button>
+                <button type="button" class="option-btn" onclick="submitForm()">Empresa de Tecnologia</button>
+                <button type="button" class="option-btn" onclick="submitForm()">Freelancer</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
